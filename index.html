@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para validar campos</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="container">
+        <form  id="form-valida" class="formulario" method="post" action="#">
+      
+            <div class="title icon icon-forward-1"> Validando campos A e B</div>
+            
+            <div class="input-container">
+                <input id="numA" class="input" type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder=""/>
+                <div class="campo-A"></div>
+                <label for="campo-A" class="label icon icon-user-1"> Número-A</label>
+            </div>
+            
+            <div class="input-container">
+                <input id="numB" class="input" type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57" placeholder=""/>
+                <div class="campo-B"></div>
+                <label for="campo-B" class="label icon icon-lock-1"> Número-B</label>
+            </div>
+            
+            <button type="text" type="submit" class="btn">Submit</button>
+         </form>
+         <p class="sucess-message"> </p>
+        <p class="error-message"> </p>
+    </div>
+</body>
+<script src="./valida_campos.js"> </script>
+</html>
